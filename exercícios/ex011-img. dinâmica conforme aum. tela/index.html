@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture><!--usar o picture com o comando source com 3 tipos de imagem para o site, para cada tamanho de tela que o usuário irá acessar, sendo P,M e G, cada um com um tamanho em pixels, DETALHE: NA SEQUÊNCIA DE CIMA PRA BAIXO P, M e G.-->
+  <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexível">
+</picture>
+    
+<H1>Reproduzindo Áudio</H1>
+<p>Vamos aprender a reproduzir Áudios em HTML 5.</p>
+<audio preload="metadata" autoplay controls loop>
+<source src="midia/Jefferson Airplane - White Rabbit.mp3" type="audio/mpeg">
+<source src="midia/Jefferson Airplane - White Rabbit.mp3" type="audio/ogg">
+<source src="midia/Jefferson Airplane - White Rabbit.mp3" type="audio/wav"><!--arquivo wav pra navegação é muito pesado. Procurar não usar.-->
+<p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midia/Jefferson Airplane - White Rabbit.mp3"> clique aqui</a> para baixar o arwuivo MP3:</p>
+</audio>
+</body>
+</html>
